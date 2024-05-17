@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&amp;display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(45deg, #E5D6C1, #BDBCBA);
+}
+
+.body {
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    padding: 9px;
+    color: red;
+    background-color: black;
+}
+
+#highscoreBox {
+    position: absolute;
+    top: 93px;
+    right: 156px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    padding: 9px;
+    color: red;
+    background-color: black;
+}
+
+#board {
+    background-image: linear-gradient(45deg, #E5D6C1, #BDBCBA);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: #FF4050;
+    border: 2px solid rgb(34, 4, 34);
+    transform: scale(1.02);
+    border-radius: 50%;
+}
+
+.snake {
+    background-color: #292A49;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: #EBB261;
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
